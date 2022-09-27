@@ -1,0 +1,244 @@
+:root {
+  --clr-primary: #5bb5a2;
+  --clr-primary-rgb: 91, 181, 162;
+  --clr-white-000: #ffffff;
+  --clr-white-rgb: 255, 255, 255;
+  --clr-dark-000: rgb(26, 25, 30);
+  --clr-dark-rgb: 26, 25, 30;
+  --clr-success: #1ee682;
+  --clr-warning: #ffc107;
+  --clr-danger: #dc3545;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--clr-white-000);
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** scrollbar **/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(36, 36, 36) transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(70, 70, 70);
+  border-radius: 10px;
+  border: 4px solid transparent;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(36, 36, 36);
+  border-radius: 10px;
+  border: 4px solid transparent;
+}
+
+@font-face {
+  font-family: "dm-sans";
+  src: url("../fonts/DM_Sans/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "inter";
+  src: url("../fonts/Inter/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.title {
+  font-family: "dm-sans", sans-serif;
+}
+
+a {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: unset;
+  display: inline-block;
+}
+
+.headline1 {
+  font-family: "dm-sans", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.0125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
+.headline2 {
+  font-family: "dm-sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.0125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
+.body1 {
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: 0.0125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
+.body2 {
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: 0.0125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
+.body3 {
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0.0125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title,
+.title-text {
+  margin-block: 16px 26px;
+}
+
+.desc-text {
+  margin-block: 8px;
+  line-height: 170%;
+}
+
+.container {
+  width: 1200px;
+  margin-inline: auto;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+}
+
+li.list-item {
+  list-style: none;
+  margin-bottom: 12px;
+  position: relative;
+  margin-left: 42px;
+}
+li.list-item::before {
+  --size: 26px;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 100px;
+  background-color: rgba(var(--clr-primary-rgb), 0.15);
+  left: -42px;
+  top: 3px;
+  content: url("../icon/check-fill.svg");
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+button,
+.button,
+.menu-button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.contained-button {
+  font-family: "dm-sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+  text-transform: unset;
+  color: var(--clr-white-000);
+  border-radius: 6px;
+  padding: 16px 24px;
+  background-color: var(--clr-primary);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s ease-in-out;
+}
+.contained-button:hover, .contained-button:focus {
+  background-color: rgba(var(--clr-primary-rgb), 0.15);
+  color: var(--clr-primary);
+}
+
+.text-button {
+  font-family: "dm-sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+  text-transform: unset;
+  color: var(--clr-primary);
+  border-radius: 6px;
+  background-color: transparent;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s ease-in-out;
+}/*# sourceMappingURL=main.css.map */
