@@ -22,6 +22,7 @@
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
         transform-origin: top left;
+        visibility: hidden;
         opacity: 0;
         transition: 0.2s ease-in-out;
         
@@ -53,7 +54,7 @@
             display: block;
             -webkit-transform: scale(1);
             transform: scale(1);
-                    
+            visibility: visible;
             opacity: 1;
 
         }

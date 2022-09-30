@@ -163,6 +163,11 @@ a {
   width: 1200px;
   margin-inline: auto;
 }
+@media screen and (max-width: 1025px) {
+  .container {
+    width: 960px;
+  }
+}
 
 .grid-col-2 {
   display: grid;
@@ -267,6 +272,7 @@ button,
   left: 0px;
   transform: scale(0.8);
   transform-origin: top left;
+  visibility: hidden;
   opacity: 0;
   transition: 0.2s ease-in-out;
 }
@@ -285,6 +291,7 @@ button,
 .dropdown.menu-open .dropdown-content {
   display: block;
   transform: scale(1);
+  visibility: visible;
   opacity: 1;
 }
 
@@ -295,6 +302,11 @@ header .container {
 @media screen and (max-width: 1401px) {
   header .container {
     width: 1200px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  header .container {
+    width: 960px;
   }
 }
 header .grid-wrap {
@@ -339,6 +351,11 @@ footer .container {
     width: 1200px;
   }
 }
+@media screen and (max-width: 1025px) {
+  footer .container {
+    width: 960px;
+  }
+}
 footer .upper-part {
   margin-bottom: 74px;
 }
@@ -352,6 +369,11 @@ footer .upper-part .logo {
 footer .upper-part .grid-wrap {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 150px;
+}
+@media screen and (max-width: 1025px) {
+  footer .upper-part .grid-wrap {
+    gap: 80px;
+  }
 }
 footer .upper-part .list .title {
   font-size: 18px;

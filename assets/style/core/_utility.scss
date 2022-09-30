@@ -16,6 +16,11 @@
 {
     width: 1200px;
     margin-inline: auto;
+
+    @media screen and (max-width: 1025px) 
+    {
+        width: 960px;
+    }
 }
 
 .grid-col-2

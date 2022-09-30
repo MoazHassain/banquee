@@ -9,6 +9,8 @@
         .title-text
         {
             font-size: 100px;
+
+            
         }
 
         .list 
@@ -294,4 +296,69 @@
         width: fit-content;
         row-gap: 12px;
     }
+}
+
+// responsive part
+@media screen and (max-width: 1025px) 
+{
+    section:not(.transactions)
+    {
+        padding-block: 80px !important;
+    }
+    .banner
+    {
+
+        .text-part 
+        {
+            .title-text
+            {
+                font-size: 80px;
+            }
+
+            .list
+            {
+                column-gap: 40px;
+            }
+        }
+    }
+
+    .features 
+    {
+        .text-part 
+        {
+            .card
+            {
+                padding: 24px;
+            }
+        }
+    }
+
+    .transactions
+    {
+        .container 
+        {
+            padding-block: 100px;
+        }
+    }
+
+    .savings 
+    {
+        .grid-col-2
+        {
+            grid-template-columns: 1.6fr 1fr;
+        }
+
+        .product
+        {
+            .product_img
+            {
+                --size: 160px;
+            }
+        } 
+        .add-field
+        {
+            --size: 160px;
+        }
+    }
+
 }

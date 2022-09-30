@@ -5,8 +5,13 @@ header
         width: 1400px;
         padding-block: 24px;
 
-        @media screen and (max-width: 1401px) {
+        @media screen and (max-width: 1401px) 
+        {
             width: 1200px;
+        }
+        @media screen and (max-width: 1025px) 
+        {
+            width: 960px;
         }
     }
     .grid-wrap

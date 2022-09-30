@@ -7,8 +7,13 @@ footer
         width: 1400px;
         padding-block: 98px 48px;
 
-        @media screen and (max-width: 1401px) {
+        @media screen and (max-width: 1401px) 
+        {
             width: 1200px;
+        }
+        @media screen and (max-width: 1025px) 
+        {
+            width: 960px;
         }
     }
     .upper-part
@@ -27,6 +32,11 @@ footer
         {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 150px;
+
+            @media screen and (max-width: 1025px) 
+            {
+                gap: 80px;
+            }
         }
 
         .list 
