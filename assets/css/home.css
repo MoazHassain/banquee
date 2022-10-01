@@ -846,7 +846,7 @@ footer .lower-part .inner {
     justify-self: start;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 460px) {
   .banner .text-part .title-text {
     font-size: 46px;
   }
