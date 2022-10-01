@@ -8,6 +8,13 @@ button,
     background-color: transparent;
 }
 
+.menu-button 
+{
+    * 
+    {
+        pointer-events: none;
+    }
+}
 
 .contained-button
 {

@@ -9,7 +9,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-32x32.png">
     <!-- <link rel="manifest" href="/site.webmanifest"> -->
-    <!-- <link rel="manifest" href="/site.webmanifest"> -->
     <link rel="stylesheet" href="./assets/css/home.css">
     
 </head>
@@ -60,6 +59,59 @@
                 <button class="text-button">Login</button>
                 <button class="contained-button">Open Account</button>
             </div>
+
+            <div class="responsive" data-navbar>
+                <button class="text-button menu-button " data-navbar-btn>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 18H12V16H21V18ZM21 13H3V11H21V13ZM21 8H3V6H21V8Z" fill="#5BB5A2"/>
+                    </svg>
+                </button>
+                <nav class="responsive-navbar">
+                    <button class="text-button close-btn menu-button " data-close-btn>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 20L4 4M20 4L4 20" stroke="#5BB5A2" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="nav-item flex-wrap">
+                        <p class="body3">Features</p>
+                    </button>
+                    <div class="collapsible-wrap">
+                        <button class="nav-item flex-wrap" data-collapsible-btn>
+                            <p class="body3">Compare</p>
+                            <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 15.5L8.25696 11.257L9.67196 9.84302L12.5 12.672L15.328 9.84302L16.743 11.257L12.5 15.5Z" fill="#1A191E"/>
+                            </svg>
+                        </button>
+                        <div class="collapsible-content">
+                            <ul class="list">
+                                <li class="body3">Item 01</li>
+                                <li class="body3">Item 02</li>
+                                <li class="body3">Item 03</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="nav-item flex-wrap">
+                        <p class="body3">Support</p>
+                    </button>
+                    <div class="collapsible-wrap">
+                        <button class="nav-item flex-wrap" data-collapsible-btn>
+                            <p class="body3">Blog</p>
+                            <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 15.5L8.25696 11.257L9.67196 9.84302L12.5 12.672L15.328 9.84302L16.743 11.257L12.5 15.5Z" fill="#1A191E"/>
+                            </svg>
+                        </button>
+                        <div class="collapsible-content">
+                            <ul class="list">
+                                <li class="body3">Item 01</li>
+                                <li class="body3">Item 02</li>
+                                <li class="body3">Item 03</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="text-button">Login</button>
+                    <button class="contained-button">Open Account</button>
+                </nav>
+            </div>
         </div>
     </header>
     <!-- header end -->
@@ -69,7 +121,7 @@
             <!-- banner start -->
             <section class="banner container grid-col-2">
                 <div class="text-part">
-                    <p class="title-text headline1">Banking starts here.</p>
+                    <p class="title-text headline1">Banking<br>starts here.</p>
                     <p class="desc-text body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     
                     <ul class="list grid-col-2">

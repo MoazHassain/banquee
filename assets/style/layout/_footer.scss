@@ -15,6 +15,15 @@ footer
         {
             width: 960px;
         }
+        @media screen and (max-width: 801px) 
+        {
+            width: 740px;
+        }
+        @media screen and (max-width: 640px) 
+        {
+            width: 100%;
+            padding-inline: 26px;
+        }
     }
     .upper-part
     {
@@ -37,6 +46,7 @@ footer
             {
                 gap: 80px;
             }
+
         }
 
         .list 
@@ -83,6 +93,62 @@ footer
         .inner 
         {
             gap: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 801px) 
+{
+    footer 
+    {
+        .logo
+        {
+            height: 26px;
+        }
+
+        .upper-part
+        {
+            > .flex-wrap 
+            {
+                display: grid;
+                row-gap: 26px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) 
+{
+    footer 
+    {
+        .upper-part
+        {
+            .grid-wrap
+            {
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) 
+{
+    footer 
+    {
+        .upper-part
+        {
+            .grid-wrap
+            {
+                grid-template-columns: 2fr 2fr;
+            }
+        }
+
+        .lower-part
+        {
+            > .flex-wrap
+            {
+                flex-direction: column;
+            }
         }
     }
 }
